@@ -4,10 +4,11 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import AuthContext from '../contexts/auth';
 import Socket from '../hooks/socket';
 
+const socket = Socket()
+
 const Meet = () => {
     const [peer, setPeer] = useState(null)
     const { user, signOut } = useContext(AuthContext);
-    const socket = Socket()
     const [params, setParams] = useSearchParams()
     const navigate = useNavigate()
     const currentUserVideoRef = useRef()

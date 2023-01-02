@@ -5,13 +5,13 @@ import { useNavigate } from 'react-router-dom'
 import AuthContext from '../contexts/auth'
 import Socket from '../hooks/socket'
 
+const socket = Socket()
 
 const Join = () => {
 
     const logInFormRef = useRef()
     const {user, signIn} = useContext(AuthContext)
     const navigate = useNavigate()
-    const socket = Socket()
     const [doctors, setDoctors] = useState([])
 
     useEffect(()=> {
