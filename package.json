@@ -1,0 +1,17 @@
+{
+  "name": "doctor-meet-server.apolloclinicdurgapur",
+  "version": "1.0.0",
+  "description": "server for doctor meet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sandip Low",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "socket.io": "^4.5.3"
+  }
+}
